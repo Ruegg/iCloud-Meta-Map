@@ -15,7 +15,6 @@ var parser = new DomParser();
 var atob = require('atob');
 var bplist = require('bplist-parser');
 
-var fullName = "";
 var totalMedia = 0;
 
 var appleSessionID = "";
@@ -183,7 +182,6 @@ function getAccountInfo(){
 
     rp(options).then(parsedBody => {
       appleDSID = parsedBody.body.dsInfo.dsid;
-      fullName = parsedBody.body.dsInfo.fullName;//May use eventually
       var hasDeviceForPhotos = parsedBody.body.hasMinimumDeviceForPhotosWeb;
       if(hasDeviceForPhotos){
         var firstName = parsedBody.body.dsInfo.firstName;
