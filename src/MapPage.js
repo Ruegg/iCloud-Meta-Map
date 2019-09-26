@@ -267,8 +267,7 @@ class MapPage extends React.Component {
     return (
       <div className="map-wrapper">
         <ReactMapGL
-          mapboxApiAccessToken="YOUR_KEY_HERE"
-          mapStyle="mapbox://styles/andreruegg/cjzzxfo0318nr1doksaff3jgr"
+          mapboxApiAccessToken="pk.eyJ1IjoibmttYXAiLCJhIjoiY2pldThqeDhvMDN2ZzJwa2FqZzRsNmd4bSJ9.dza-IYiUemXQdEoMg1yLOw"
           width='100%'
           height='100%'
           maxZoom={19}
